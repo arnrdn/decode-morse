@@ -27,3 +27,4 @@ puts decode_word('.-')
 puts decode_word('-- -.--')
 puts decode_sentence('-- -.--   -. .- -- .')
 puts decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
+
