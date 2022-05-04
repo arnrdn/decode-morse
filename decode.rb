@@ -22,7 +22,8 @@ def decode_sentence(str)
   sentence = morse.map { |w| decode_word(w) }
   sentence.join(' ')
 end
-decode_word('.-')
-decode_word('-- -.--')
-decode_sentence('-- -.--   -. .- -- .')
-decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
+
+puts decode_word('.-')
+puts decode_word('-- -.--')
+puts decode_sentence('-- -.--   -. .- -- .')
+puts decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
