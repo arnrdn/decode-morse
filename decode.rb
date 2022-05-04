@@ -10,3 +10,19 @@ def decode_char(str)
   }
   @morse_char[str]
 end
+
+def decode_word(str)
+  morse = str.split
+  word = morse.map { |c| decode_char(c) }
+  word.join
+end
+
+def decode_sentence(str)
+  morse = str.split('  ')
+  sentence = morse.map { |w| decode_word(w) }
+  sentence.join(' ')
+end
+decode_word('.-')
+decode_word('-- -.--')
+decode_sentence('-- -.--   -. .- -- .')
+decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
